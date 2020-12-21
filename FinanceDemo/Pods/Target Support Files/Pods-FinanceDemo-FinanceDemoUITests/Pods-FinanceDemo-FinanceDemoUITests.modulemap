@@ -1,0 +1,6 @@
+framework module Pods_FinanceDemo_FinanceDemoUITests {
+  umbrella header "Pods-FinanceDemo-FinanceDemoUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

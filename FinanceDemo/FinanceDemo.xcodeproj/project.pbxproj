@@ -1,0 +1,851 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		497F8C107ADB27DCB0A274D3 /* Pods_FinanceDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BF10E24C506136F3E2B7FFD /* Pods_FinanceDemoTests.framework */; };
+		58042206258B4D390065F2AD /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58042205258B4D390065F2AD /* RootViewController.swift */; };
+		5831E42A258B53640063E7C7 /* ActionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5831E429258B53640063E7C7 /* ActionModel.swift */; };
+		5857E5DD258B4B8E00D5EF59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5857E5DC258B4B8E00D5EF59 /* AppDelegate.swift */; };
+		5857E5E6258B4B9100D5EF59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5857E5E5258B4B9100D5EF59 /* Assets.xcassets */; };
+		5857E5E9258B4B9100D5EF59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5857E5E7258B4B9100D5EF59 /* LaunchScreen.storyboard */; };
+		5857E5F4258B4B9100D5EF59 /* FinanceDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5857E5F3258B4B9100D5EF59 /* FinanceDemoTests.swift */; };
+		5857E5FF258B4B9100D5EF59 /* FinanceDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5857E5FE258B4B9100D5EF59 /* FinanceDemoUITests.swift */; };
+		585D127925904B7300416260 /* FinanceKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585D127825904B7300416260 /* FinanceKit.swift */; };
+		585D127E25904CF800416260 /* FinanceTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585D127D25904CF800416260 /* FinanceTools.swift */; };
+		588F5514258C80280043EF42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588F5513258C80280043EF42 /* ViewController.swift */; };
+		588F5525258C85350043EF42 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588F5524258C85350043EF42 /* RootViewModel.swift */; };
+		588F5534258C8D110043EF42 /* RegExViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588F5533258C8D110043EF42 /* RegExViewController.swift */; };
+		588F553C258C8D590043EF42 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588F553B258C8D590043EF42 /* InputViewController.swift */; };
+		975A5B0F68CC574443E5D3EE /* Pods_FinanceDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3370C98EDB0D10AD8AD5D3EE /* Pods_FinanceDemo.framework */; };
+		C3E0B6175C7E28CE18B87D6B /* Pods_FinanceDemo_FinanceDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17FCB3583A8C7A2D61004FC5 /* Pods_FinanceDemo_FinanceDemoUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5857E5F0258B4B9100D5EF59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5857E5D1258B4B8E00D5EF59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5857E5D8258B4B8E00D5EF59;
+			remoteInfo = FinanceDemo;
+		};
+		5857E5FB258B4B9100D5EF59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5857E5D1258B4B8E00D5EF59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5857E5D8258B4B8E00D5EF59;
+			remoteInfo = FinanceDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		17FCB3583A8C7A2D61004FC5 /* Pods_FinanceDemo_FinanceDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinanceDemo_FinanceDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DF780EC57EAE37E724A45B8 /* Pods-FinanceDemo-FinanceDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceDemo-FinanceDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-FinanceDemo-FinanceDemoUITests/Pods-FinanceDemo-FinanceDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3370C98EDB0D10AD8AD5D3EE /* Pods_FinanceDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinanceDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		373FBD2691BFDF6514F4666A /* Pods-FinanceDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceDemo.release.xcconfig"; path = "Target Support Files/Pods-FinanceDemo/Pods-FinanceDemo.release.xcconfig"; sourceTree = "<group>"; };
+		3D7C9951C56A216B81BFB72C /* Pods-FinanceDemo-FinanceDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceDemo-FinanceDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-FinanceDemo-FinanceDemoUITests/Pods-FinanceDemo-FinanceDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		58042205258B4D390065F2AD /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		5831E429258B53640063E7C7 /* ActionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionModel.swift; sourceTree = "<group>"; };
+		5857E5D9258B4B8E00D5EF59 /* FinanceDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinanceDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5857E5DC258B4B8E00D5EF59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5857E5E5258B4B9100D5EF59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5857E5E8258B4B9100D5EF59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5857E5EA258B4B9100D5EF59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5857E5EF258B4B9100D5EF59 /* FinanceDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinanceDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5857E5F3258B4B9100D5EF59 /* FinanceDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceDemoTests.swift; sourceTree = "<group>"; };
+		5857E5F5258B4B9100D5EF59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5857E5FA258B4B9100D5EF59 /* FinanceDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinanceDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5857E5FE258B4B9100D5EF59 /* FinanceDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceDemoUITests.swift; sourceTree = "<group>"; };
+		5857E600258B4B9100D5EF59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		585D127825904B7300416260 /* FinanceKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceKit.swift; sourceTree = "<group>"; };
+		585D127D25904CF800416260 /* FinanceTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceTools.swift; sourceTree = "<group>"; };
+		588F5513258C80280043EF42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		588F5524258C85350043EF42 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		588F5533258C8D110043EF42 /* RegExViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegExViewController.swift; sourceTree = "<group>"; };
+		588F553B258C8D590043EF42 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		67ED473E9119A5645A28BA1C /* Pods-FinanceDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-FinanceDemoTests/Pods-FinanceDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6BF10E24C506136F3E2B7FFD /* Pods_FinanceDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinanceDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2A1B2A8C6668DA1EFF9B916 /* Pods-FinanceDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceDemoTests.release.xcconfig"; path = "Target Support Files/Pods-FinanceDemoTests/Pods-FinanceDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		F217694D98A913C5153D2C70 /* Pods-FinanceDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceDemo.debug.xcconfig"; path = "Target Support Files/Pods-FinanceDemo/Pods-FinanceDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5857E5D6258B4B8E00D5EF59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				975A5B0F68CC574443E5D3EE /* Pods_FinanceDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5857E5EC258B4B9100D5EF59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				497F8C107ADB27DCB0A274D3 /* Pods_FinanceDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5857E5F7258B4B9100D5EF59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3E0B6175C7E28CE18B87D6B /* Pods_FinanceDemo_FinanceDemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58042202258B4CA60065F2AD /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				5857E5DC258B4B8E00D5EF59 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		58042203258B4D1D0065F2AD /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				5831E426258B53450063E7C7 /* Base */,
+				58042204258B4D210065F2AD /* Root */,
+				588F552C258C8CE30043EF42 /* Input */,
+				588F552D258C8CE80043EF42 /* RegEx */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		58042204258B4D210065F2AD /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				588F5524258C85350043EF42 /* RootViewModel.swift */,
+				58042205258B4D390065F2AD /* RootViewController.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		5831E426258B53450063E7C7 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5831E428258B53550063E7C7 /* M */,
+				5831E427258B534A0063E7C7 /* C */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5831E427258B534A0063E7C7 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				588F5513258C80280043EF42 /* ViewController.swift */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		5831E428258B53550063E7C7 /* M */ = {
+			isa = PBXGroup;
+			children = (
+				5831E429258B53640063E7C7 /* ActionModel.swift */,
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		5857E5D0258B4B8E00D5EF59 = {
+			isa = PBXGroup;
+			children = (
+				5857E5DB258B4B8E00D5EF59 /* FinanceDemo */,
+				5857E5F2258B4B9100D5EF59 /* FinanceDemoTests */,
+				5857E5FD258B4B9100D5EF59 /* FinanceDemoUITests */,
+				5857E5DA258B4B8E00D5EF59 /* Products */,
+				DE4324022864249DDF676CC8 /* Pods */,
+				C6DEDCA5B0E95527C9D08947 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5857E5DA258B4B8E00D5EF59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5857E5D9258B4B8E00D5EF59 /* FinanceDemo.app */,
+				5857E5EF258B4B9100D5EF59 /* FinanceDemoTests.xctest */,
+				5857E5FA258B4B9100D5EF59 /* FinanceDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5857E5DB258B4B8E00D5EF59 /* FinanceDemo */ = {
+			isa = PBXGroup;
+			children = (
+				585D127425904B2D00416260 /* FinanceKit */,
+				5857E61E258B4C3A00D5EF59 /* Classes */,
+				5857E61F258B4C4900D5EF59 /* Support Files */,
+			);
+			path = FinanceDemo;
+			sourceTree = "<group>";
+		};
+		5857E5F2258B4B9100D5EF59 /* FinanceDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				5857E5F3258B4B9100D5EF59 /* FinanceDemoTests.swift */,
+				5857E5F5258B4B9100D5EF59 /* Info.plist */,
+			);
+			path = FinanceDemoTests;
+			sourceTree = "<group>";
+		};
+		5857E5FD258B4B9100D5EF59 /* FinanceDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5857E5FE258B4B9100D5EF59 /* FinanceDemoUITests.swift */,
+				5857E600258B4B9100D5EF59 /* Info.plist */,
+			);
+			path = FinanceDemoUITests;
+			sourceTree = "<group>";
+		};
+		5857E61E258B4C3A00D5EF59 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				58042202258B4CA60065F2AD /* AppDelegate */,
+				58042203258B4D1D0065F2AD /* Demo */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		5857E61F258B4C4900D5EF59 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5857E5E5258B4B9100D5EF59 /* Assets.xcassets */,
+				5857E5E7258B4B9100D5EF59 /* LaunchScreen.storyboard */,
+				5857E5EA258B4B9100D5EF59 /* Info.plist */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		585D127425904B2D00416260 /* FinanceKit */ = {
+			isa = PBXGroup;
+			children = (
+				585D127825904B7300416260 /* FinanceKit.swift */,
+				585D127D25904CF800416260 /* FinanceTools.swift */,
+			);
+			name = FinanceKit;
+			path = ../../FinanceKit;
+			sourceTree = "<group>";
+		};
+		588F552C258C8CE30043EF42 /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				588F553B258C8D590043EF42 /* InputViewController.swift */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		588F552D258C8CE80043EF42 /* RegEx */ = {
+			isa = PBXGroup;
+			children = (
+				588F5533258C8D110043EF42 /* RegExViewController.swift */,
+			);
+			path = RegEx;
+			sourceTree = "<group>";
+		};
+		C6DEDCA5B0E95527C9D08947 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3370C98EDB0D10AD8AD5D3EE /* Pods_FinanceDemo.framework */,
+				17FCB3583A8C7A2D61004FC5 /* Pods_FinanceDemo_FinanceDemoUITests.framework */,
+				6BF10E24C506136F3E2B7FFD /* Pods_FinanceDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE4324022864249DDF676CC8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F217694D98A913C5153D2C70 /* Pods-FinanceDemo.debug.xcconfig */,
+				373FBD2691BFDF6514F4666A /* Pods-FinanceDemo.release.xcconfig */,
+				3D7C9951C56A216B81BFB72C /* Pods-FinanceDemo-FinanceDemoUITests.debug.xcconfig */,
+				2DF780EC57EAE37E724A45B8 /* Pods-FinanceDemo-FinanceDemoUITests.release.xcconfig */,
+				67ED473E9119A5645A28BA1C /* Pods-FinanceDemoTests.debug.xcconfig */,
+				C2A1B2A8C6668DA1EFF9B916 /* Pods-FinanceDemoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5857E5D8258B4B8E00D5EF59 /* FinanceDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5857E603258B4B9100D5EF59 /* Build configuration list for PBXNativeTarget "FinanceDemo" */;
+			buildPhases = (
+				A48CF7E5281FDF04DF204196 /* [CP] Check Pods Manifest.lock */,
+				5857E5D5258B4B8E00D5EF59 /* Sources */,
+				5857E5D6258B4B8E00D5EF59 /* Frameworks */,
+				5857E5D7258B4B8E00D5EF59 /* Resources */,
+				A305E7AC7A0720540C3AB4FD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FinanceDemo;
+			productName = FinanceDemo;
+			productReference = 5857E5D9258B4B8E00D5EF59 /* FinanceDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5857E5EE258B4B9100D5EF59 /* FinanceDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5857E606258B4B9100D5EF59 /* Build configuration list for PBXNativeTarget "FinanceDemoTests" */;
+			buildPhases = (
+				3DB2A5670E1F1289E6224EAD /* [CP] Check Pods Manifest.lock */,
+				5857E5EB258B4B9100D5EF59 /* Sources */,
+				5857E5EC258B4B9100D5EF59 /* Frameworks */,
+				5857E5ED258B4B9100D5EF59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5857E5F1258B4B9100D5EF59 /* PBXTargetDependency */,
+			);
+			name = FinanceDemoTests;
+			productName = FinanceDemoTests;
+			productReference = 5857E5EF258B4B9100D5EF59 /* FinanceDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5857E5F9258B4B9100D5EF59 /* FinanceDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5857E609258B4B9100D5EF59 /* Build configuration list for PBXNativeTarget "FinanceDemoUITests" */;
+			buildPhases = (
+				21F7847C91128994A7FE7AC1 /* [CP] Check Pods Manifest.lock */,
+				5857E5F6258B4B9100D5EF59 /* Sources */,
+				5857E5F7258B4B9100D5EF59 /* Frameworks */,
+				5857E5F8258B4B9100D5EF59 /* Resources */,
+				F883CE69DEE6CDB7138E9A8E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5857E5FC258B4B9100D5EF59 /* PBXTargetDependency */,
+			);
+			name = FinanceDemoUITests;
+			productName = FinanceDemoUITests;
+			productReference = 5857E5FA258B4B9100D5EF59 /* FinanceDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5857E5D1258B4B8E00D5EF59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					5857E5D8258B4B8E00D5EF59 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					5857E5EE258B4B9100D5EF59 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 5857E5D8258B4B8E00D5EF59;
+					};
+					5857E5F9258B4B9100D5EF59 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 5857E5D8258B4B8E00D5EF59;
+					};
+				};
+			};
+			buildConfigurationList = 5857E5D4258B4B8E00D5EF59 /* Build configuration list for PBXProject "FinanceDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5857E5D0258B4B8E00D5EF59;
+			productRefGroup = 5857E5DA258B4B8E00D5EF59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5857E5D8258B4B8E00D5EF59 /* FinanceDemo */,
+				5857E5EE258B4B9100D5EF59 /* FinanceDemoTests */,
+				5857E5F9258B4B9100D5EF59 /* FinanceDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5857E5D7258B4B8E00D5EF59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5857E5E9258B4B9100D5EF59 /* LaunchScreen.storyboard in Resources */,
+				5857E5E6258B4B9100D5EF59 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5857E5ED258B4B9100D5EF59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5857E5F8258B4B9100D5EF59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21F7847C91128994A7FE7AC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FinanceDemo-FinanceDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3DB2A5670E1F1289E6224EAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FinanceDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A305E7AC7A0720540C3AB4FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FinanceDemo/Pods-FinanceDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FinanceDemo/Pods-FinanceDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FinanceDemo/Pods-FinanceDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A48CF7E5281FDF04DF204196 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FinanceDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F883CE69DEE6CDB7138E9A8E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FinanceDemo-FinanceDemoUITests/Pods-FinanceDemo-FinanceDemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FinanceDemo-FinanceDemoUITests/Pods-FinanceDemo-FinanceDemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FinanceDemo-FinanceDemoUITests/Pods-FinanceDemo-FinanceDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5857E5D5258B4B8E00D5EF59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				588F5525258C85350043EF42 /* RootViewModel.swift in Sources */,
+				58042206258B4D390065F2AD /* RootViewController.swift in Sources */,
+				5857E5DD258B4B8E00D5EF59 /* AppDelegate.swift in Sources */,
+				588F553C258C8D590043EF42 /* InputViewController.swift in Sources */,
+				588F5534258C8D110043EF42 /* RegExViewController.swift in Sources */,
+				585D127E25904CF800416260 /* FinanceTools.swift in Sources */,
+				588F5514258C80280043EF42 /* ViewController.swift in Sources */,
+				5831E42A258B53640063E7C7 /* ActionModel.swift in Sources */,
+				585D127925904B7300416260 /* FinanceKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5857E5EB258B4B9100D5EF59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5857E5F4258B4B9100D5EF59 /* FinanceDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5857E5F6258B4B9100D5EF59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5857E5FF258B4B9100D5EF59 /* FinanceDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5857E5F1258B4B9100D5EF59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5857E5D8258B4B8E00D5EF59 /* FinanceDemo */;
+			targetProxy = 5857E5F0258B4B9100D5EF59 /* PBXContainerItemProxy */;
+		};
+		5857E5FC258B4B9100D5EF59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5857E5D8258B4B8E00D5EF59 /* FinanceDemo */;
+			targetProxy = 5857E5FB258B4B9100D5EF59 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5857E5E7258B4B9100D5EF59 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5857E5E8258B4B9100D5EF59 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5857E601258B4B9100D5EF59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5857E602258B4B9100D5EF59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5857E604258B4B9100D5EF59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F217694D98A913C5153D2C70 /* Pods-FinanceDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "/Users/luozhicheng/Desktop/FinanceDemo/FinanceDemo/FinanceDemo/Support Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ic3w33k.FinanceDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5857E605258B4B9100D5EF59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 373FBD2691BFDF6514F4666A /* Pods-FinanceDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "/Users/luozhicheng/Desktop/FinanceDemo/FinanceDemo/FinanceDemo/Support Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ic3w33k.FinanceDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		5857E607258B4B9100D5EF59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67ED473E9119A5645A28BA1C /* Pods-FinanceDemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FinanceDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ic3w33k.FinanceDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FinanceDemo.app/FinanceDemo";
+			};
+			name = Debug;
+		};
+		5857E608258B4B9100D5EF59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2A1B2A8C6668DA1EFF9B916 /* Pods-FinanceDemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FinanceDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ic3w33k.FinanceDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FinanceDemo.app/FinanceDemo";
+			};
+			name = Release;
+		};
+		5857E60A258B4B9100D5EF59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D7C9951C56A216B81BFB72C /* Pods-FinanceDemo-FinanceDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FinanceDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ic3w33k.FinanceDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FinanceDemo;
+			};
+			name = Debug;
+		};
+		5857E60B258B4B9100D5EF59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DF780EC57EAE37E724A45B8 /* Pods-FinanceDemo-FinanceDemoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FinanceDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ic3w33k.FinanceDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FinanceDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5857E5D4258B4B8E00D5EF59 /* Build configuration list for PBXProject "FinanceDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5857E601258B4B9100D5EF59 /* Debug */,
+				5857E602258B4B9100D5EF59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5857E603258B4B9100D5EF59 /* Build configuration list for PBXNativeTarget "FinanceDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5857E604258B4B9100D5EF59 /* Debug */,
+				5857E605258B4B9100D5EF59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5857E606258B4B9100D5EF59 /* Build configuration list for PBXNativeTarget "FinanceDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5857E607258B4B9100D5EF59 /* Debug */,
+				5857E608258B4B9100D5EF59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5857E609258B4B9100D5EF59 /* Build configuration list for PBXNativeTarget "FinanceDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5857E60A258B4B9100D5EF59 /* Debug */,
+				5857E60B258B4B9100D5EF59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5857E5D1258B4B8E00D5EF59 /* Project object */;
+}
