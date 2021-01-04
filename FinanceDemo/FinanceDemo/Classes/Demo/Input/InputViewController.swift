@@ -6,8 +6,26 @@
 //
 
 import UIKit
-import ReactiveCocoa
-import ReactiveSwift
 
 class InputViewController: ViewController {
+    private let label: UILabel = {
+        let label = UILabel(frame: .zero)
+        label.textColor = .blue
+        label.font = .systemFont(ofSize: 22, weight: .medium)
+        label.textAlignment = .center
+        return label
+    }()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        textField.delegate = self
+        textField.addTarget(self, action: #selector(textFieldDidChange(textField:)), for: .editingChanged)
+    }
+}
+
+extension InputViewController: UITextFieldDelegate {
+    @objc func textFieldDidChange(textField: UITextField) -> Void {
+        label.text = textField.text
+    }
 }

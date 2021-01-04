@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import ReactiveSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {

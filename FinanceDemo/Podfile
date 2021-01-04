@@ -6,7 +6,6 @@ target 'FinanceDemo' do
   use_frameworks!
 
   pod 'SnapKit', '~> 5.0.1'
-  pod 'ReactiveCocoa', '~> 11.1.0'
   # Pods for FinanceDemo
 
   target 'FinanceDemoTests' do
