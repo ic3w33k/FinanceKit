@@ -33,11 +33,13 @@
     });
 }
 
-+ (BOOL)textField:(UITextField *)textField remain:(NSUInteger)remain replacementString:(NSString *)string {
++ (BOOL)textField:(UITextField *)textField range:(NSRange)range replacementString:(NSString *)string remain:(NSUInteger)remain {
     if (remain <= 0 && [string isEqualToString:@"."]) {
         return NO;
     }
-    if ([textField.text isEqualToString:@""] && [string isEqualToString:@"."] )  return NO;
+    if ([textField.text isEqualToString:@""] && [string isEqualToString:@"."] ) {
+        return NO;
+    }
     NSRange zeroRange = [textField.text rangeOfString:@"0"];
     if(zeroRange.length == 1 && [textField.text length] == 1 && ![string isEqualToString:@"."]) {
         if ([string isEqualToString:@""]) {
@@ -46,11 +48,18 @@
             return NO;
         }
     }
-    NSRange pointRange = [textField.text rangeOfString:@"."];
-    NSString *tempStr = [textField.text stringByAppendingString:string];
+    if ([textField.text containsString:@"."] && [string isEqualToString:@"."]) {
+        return NO;
+    }
+    
+    NSString *tempStr = [textField.text stringByReplacingCharactersInRange:range withString:string];
+    NSRange pointRange = [tempStr rangeOfString:@"."];
     NSUInteger strlen = [tempStr length];
-    if(pointRange.length > 0 &&([string isEqualToString:@"."] || strlen - (pointRange.location + 1) > remain)) return NO;
-    NSCharacterSet *numbers = (pointRange.length > 0)?[NSCharacterSet characterSetWithCharactersInString:@"0123456789"] : [NSCharacterSet characterSetWithCharactersInString:@"0123456789."];
+    if(pointRange.length > 0 && strlen - (pointRange.location + 1) > remain) {
+        return NO;
+    }
+    
+    NSCharacterSet *numbers = [NSCharacterSet characterSetWithCharactersInString:@"0123456789."];
     NSScanner *scanner = [NSScanner scannerWithString:string];
     NSString *buffer;
     BOOL scan = [scanner scanCharactersFromSet:numbers intoString:&buffer];

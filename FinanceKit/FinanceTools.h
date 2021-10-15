@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - shouldChangeCharactersInRange
 /// 允许保留几位小数
-+ (BOOL)textField:(UITextField *)textField digits:(NSUInteger)digits replacementString:(NSString *)string;
++ (BOOL)textField:(UITextField *)textField range:(NSRange)range replacementString:(NSString *)string remain:(NSUInteger)remain;
 
 @end
 

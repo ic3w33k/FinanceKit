@@ -24,7 +24,7 @@
 }
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
-    return [FinanceTools textField:textField digits:self.model.digits replacementString:string];
+    return [FinanceTools textField:textField range:range replacementString:string remain:self.model.digits];
 }
 
 @end
